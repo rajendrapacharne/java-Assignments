@@ -1,0 +1,66 @@
+**1. What Is the Default Value of an Array for Different Data Types?**
+
+   The default values of elements in an array depend on the data type:
+   - Numeric data types (int, float, double, etc.) default to 0.
+   - `boolean` defaults to `false`.
+   - Reference data types (e.g., objects) default to `null`.
+
+**2. Can You Pass a Negative Number as the Array Size?**
+
+   No, you cannot pass a negative number as the size of an array in Java. Attempting to create an array with a negative size will result in a runtime exception, specifically `NegativeArraySizeException`.
+
+**3. Where Does an Array Store in JVM Memory?**
+
+   Arrays are stored in the heap memory area of the Java Virtual Machine (JVM). Each element of the array is allocated memory in a contiguous block of memory.
+
+**4. What Are the Disadvantages of Arrays?**
+
+   Some disadvantages of arrays in Java include:
+   - Fixed size: Arrays have a fixed size, making it challenging to dynamically adjust their size.
+   - Lack of built-in methods: Arrays do not provide built-in methods for common operations like adding or removing elements.
+   - Inefficient for search and insertion: Searching and inserting elements in an array can be inefficient for large arrays.
+   - Homogeneous data: Arrays can only store elements of the same data type.
+
+**5. What Is an Anonymous Array in Java? Give an Example.**
+
+   An anonymous array in Java is an array that is declared and initialized without specifying its name. It is typically used for short-lived arrays that don't need a variable name. Here's an example:
+
+   ```java
+   int[] numbers = new int[]{1, 2, 3, 4, 5}; // Anonymous array
+   ```
+
+**6. What Are the Different Ways to Traverse an Array in Java?**
+
+   There are several ways to traverse (iterate through) an array in Java:
+   - Using a `for` loop with an index.
+   - Using a `for-each` loop (enhanced `for` loop).
+   - Using a `while` loop with an index.
+   - Using a `do-while` loop with an index.
+
+   Here's an example using a `for-each` loop:
+
+   ```java
+   int[] numbers = {1, 2, 3, 4, 5};
+   for (int num : numbers) {
+       System.out.println(num);
+   }
+   ```
+
+**7. What Is the Difference Between `length` and `length()` Methods? Give Examples.**
+
+   - `length` is a property of arrays in Java and is used to get the number of elements in the array.
+   - `length()` is a method of the `String` class in Java and is used to get the number of characters in a string.
+
+   Example with `length` for an array:
+
+   ```java
+   int[] numbers = {1, 2, 3, 4, 5};
+   int arrayLength = numbers.length; // Gets the number of elements in the array
+   ```
+
+   Example with `length()` for a string:
+
+   ```java
+   String text = "Hello, World!";
+   int stringLength = text.length(); // Gets the number of characters in the string
+   ```
