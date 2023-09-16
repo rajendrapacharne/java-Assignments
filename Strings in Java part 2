@@ -1,0 +1,89 @@
+Here are Java programs to address your questions:
+
+**1. Simple String Program to Take Input from User:**
+```java
+import java.util.Scanner;
+
+public class InputStringExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+        System.out.println("You entered: " + inputString);
+        scanner.close();
+    }
+}
+```
+
+**2. How to Concatenate Two Strings in Java?**
+```java
+public class StringConcatenationExample {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "World";
+        String result = str1 + " " + str2;
+        System.out.println("Concatenated String: " + result);
+    }
+}
+```
+
+**3. How to Find the Length of a String in Java?**
+```java
+public class StringLengthExample {
+    public static void main(String[] args) {
+        String text = "Hello, World!";
+        int length = text.length();
+        System.out.println("Length of the string: " + length);
+    }
+}
+```
+
+**4. How to Compare Two Strings in Java?**
+```java
+public class StringComparisonExample {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "Hello";
+        
+        // Using equals method for comparison
+        boolean areEqual = str1.equals(str2);
+        
+        System.out.println("Are the strings equal? " + areEqual);
+    }
+}
+```
+
+**5. Program to Find the Length of the String "refrigerator":**
+```java
+public class StringLengthExample {
+    public static void main(String[] args) {
+        String text = "refrigerator";
+        int length = text.length();
+        System.out.println("Length of the string: " + length);
+    }
+}
+```
+
+**6. Program to Check If the Letter 'e' Is Present in the Word 'Umbrella':**
+```java
+public class LetterPresenceExample {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean hasE = word.contains("e");
+        System.out.println("Does the word contain 'e'? " + hasE);
+    }
+}
+```
+
+**7. Program to Delete All Consonants from the String "Hello, Have a Good Day":**
+```java
+public class RemoveConsonantsExample {
+    public static void main(String[] args) {
+        String text = "Hello, have a good day";
+        String result = text.replaceAll("[^aeiouAEIOU ]", "");
+        System.out.println("String after removing consonants: " + result);
+    }
+}
+```
+
+These programs demonstrate various string operations, including input, concatenation, length, comparison, and manipulation.
