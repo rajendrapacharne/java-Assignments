@@ -1,0 +1,39 @@
+
+**1. What is a Programming Language?**
+
+   **Answer:** A programming language is a formal and structured communication tool used to instruct computers to perform specific tasks or solve problems. It consists of a set of rules and syntax that allow programmers to write instructions in a human-readable form, which is then translated into machine code for execution by a computer.
+
+**2. Why Do We Need a Programming Language?**
+
+   **Answer:** We need programming languages because they provide a means for humans to communicate instructions to computers. Programming languages offer abstraction, enabling programmers to write complex logic and algorithms in a readable and understandable format. They facilitate software development, automation, and the creation of applications that power our digital world.
+
+**3. What Are the Features of Java?**
+
+   **Answer:** Java is known for several features, including:
+   
+   - **Platform Independence:** Java code can run on different platforms without modification, thanks to the Java Virtual Machine (JVM).
+   - **Object-Oriented:** Java supports object-oriented programming (OOP) principles, such as encapsulation, inheritance, and polymorphism.
+   - **Robust:** Java offers strong type checking, exception handling, and memory management to ensure program reliability.
+   - **Multi-threading:** Java supports concurrent execution through its built-in support for multi-threading.
+   - **Security:** Java provides various security features, including sandboxing for applets.
+   - **Portability:** Java's "Write Once, Run Anywhere" philosophy makes it highly portable across different environments.
+
+**4. What Is an Object?**
+
+   **Answer:** An object is a fundamental concept in object-oriented programming (OOP). It is a self-contained unit that combines data (attributes) and methods (functions) that operate on that data. Objects are instances of classes and can represent real-world entities, concepts, or abstract data structures.
+
+**5. What Is a Class?**
+
+   **Answer:** A class is a blueprint or template for creating objects in object-oriented programming. It defines the structure and behavior that objects of the class will have. A class encapsulates data (attributes) and methods (functions) that operate on that data. Objects are instances of classes.
+
+**6. Explain About the main() Method in Java?**
+
+   **Question:** What is the purpose of the `main()` method in Java?
+
+   **Answer:** The `main()` method is a special method in Java and serves as the entry point for Java applications. When a Java program is executed, the JVM starts by calling the `main()` method, which is defined in a class. It is the method where the program begins execution. The `main()` method should have the following signature:
+
+   ```java
+   public static void main(String[] args)
+   ```
+
+   The `args` parameter allows you to pass command-line arguments to your Java program. Code inside the `main()` method is executed sequentially, and it is from here that the program's logic is initiated and controlled.
