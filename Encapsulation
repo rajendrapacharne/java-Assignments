@@ -1,0 +1,87 @@
+**1. What Is Encapsulation in Java? Why Is It Called Data Hiding?**
+
+   - **Encapsulation** is one of the four fundamental OOP (Object-Oriented Programming) concepts. It refers to the bundling of data (attributes) and methods (functions) that operate on that data into a single unit known as a class. Encapsulation allows you to control access to the internal state of an object.
+   - It is called **data hiding** because encapsulation restricts direct access to an object's data (attributes) from outside the class. Instead, access to data is provided through well-defined methods, which can enforce validation and business logic. This helps maintain the integrity of the object's state.
+
+**2. What Are the Important Features of Encapsulation?**
+
+   The important features of encapsulation include:
+   - **Data Hiding:** Restricting direct access to an object's data.
+   - **Access Control:** Defining the level of access (public, private, protected) for attributes and methods.
+   - **Encapsulation Methods:** Providing getter and setter methods to access and modify data safely.
+   - **Data Validation:** Enforcing rules and validation logic when setting data.
+
+**3. What Are Getter and Setter Methods in Java? Explain with an Example.**
+
+   - **Getter Methods:** Getter methods are used to retrieve the value of an object's private attribute. They are typically named with a `get` prefix.
+   - **Setter Methods:** Setter methods are used to set the value of an object's private attribute. They are typically named with a `set` prefix.
+
+   Example:
+   ```java
+   public class Student {
+       private String name; // Private attribute
+
+       // Getter method
+       public String getName() {
+           return name;
+       }
+
+       // Setter method
+       public void setName(String newName) {
+           // Add validation logic if needed
+           name = newName;
+       }
+   }
+   ```
+
+**4. What Is the Use of the "this" Keyword? Explain with an Example.**
+
+   The `this` keyword in Java is used to refer to the current instance of a class. It is often used to disambiguate between instance variables and method parameters when they share the same name.
+
+   Example:
+   ```java
+   public class Person {
+       private String name;
+
+       // Constructor with a parameter
+       public Person(String name) {
+           // Use "this" to refer to the instance variable
+           this.name = name;
+       }
+
+       public void printName() {
+           System.out.println("Name: " + this.name);
+       }
+   }
+   ```
+
+**5. What Is the Advantage of Encapsulation?**
+
+   The advantages of encapsulation include:
+   - **Data Protection:** It protects an object's data from unauthorized access and modification.
+   - **Flexibility:** It allows you to change the internal implementation details of a class without affecting other parts of the code that use the class.
+   - **Modularity:** It promotes modularity by bundling data and methods into cohesive units (classes).
+   - **Code Maintainability:** It makes code easier to understand and maintain by encapsulating related functionality.
+
+**6. How to Achieve Encapsulation in Java? Give an Example.**
+
+   Encapsulation in Java is achieved by declaring the attributes of a class as `private` and providing public getter and setter methods to access and modify those attributes. Here's an example:
+
+   ```java
+   public class Person {
+       private String name; // Private attribute
+
+       // Getter method
+       public String getName() {
+           return name;
+       }
+
+       // Setter method
+       public void setName(String newName) {
+           // Add validation logic if needed
+           name = newName;
+       }
+   }
+   ```
+
+   In this example, the `name` attribute is private, and getter (`getName()`) and setter (`setName()`) methods are used to encapsulate access to it.
