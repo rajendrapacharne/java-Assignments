@@ -7,6 +7,7 @@
 **A2:** A Version Control System (VCS) is a software tool that helps developers manage and track changes to their source code or any other files. It allows multiple people to collaborate on a project, keeps a history of changes, and provides the ability to revert to previous versions if needed. Git is one example of a version control system.
 
 
+
 **Q3: What is GitHub?**
 
 **A3:** GitHub is a web-based platform that provides hosting for Git repositories. It offers collaboration features, such as issue tracking, pull requests, and wikis, making it easier for teams to work together on projects using Git. It's a popular platform for open-source and private software development.
