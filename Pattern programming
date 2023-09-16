@@ -1,0 +1,63 @@
+**1. Program to Print Alphabets A to H Using Pattern Programming Logic:**
+```java
+public class AlphabetPattern {
+    public static void main(String[] args) {
+        int rowCount = 4; // Number of rows
+        char currentChar = 'A'; // Starting character
+        
+        for (int i = 1; i <= rowCount; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(currentChar + " ");
+                currentChar++;
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+**2. Program to Print a Triangle Using Star Pattern Programming Logic:**
+```java
+public class StarTrianglePattern {
+    public static void main(String[] args) {
+        int rowCount = 5; // Number of rows
+        
+        for (int i = 1; i <= rowCount; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+**3. Program to Print "PW SKILLS" Using Pattern Programming Logic:**
+```java
+public class TextPattern {
+    public static void main(String[] args) {
+        String text = "PW SKILLS";
+        int length = text.length();
+        
+        for (int i = 0; i < length; i++) {
+            char currentChar = text.charAt(i);
+            System.out.println(currentChar);
+        }
+    }
+}
+```
+
+**4. Program to Print Your Full Name Using Pattern Programming Logic:**
+```java
+public class NamePattern {
+    public static void main(String[] args) {
+        String fullName = "Your Full Name";
+        int length = fullName.length();
+        
+        for (int i = 0; i < length; i++) {
+            char currentChar = fullName.charAt(i);
+            System.out.println(currentChar);
+        }
+    }
+}
+```
