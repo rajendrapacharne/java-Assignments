@@ -1,0 +1,78 @@
+**1. What Do You Mean by an Array?**
+
+   An array is a data structure in Java (and many other programming languages) that allows you to store a collection of elements of the same data type in a single variable. Arrays are used to hold multiple values under one name, making it easier to manage and manipulate large sets of data.
+
+**2. How to Create an Array?**
+
+   To create an array in Java, you can use the following syntax:
+   
+   ```java
+   dataType[] arrayName = new dataType[arrayLength];
+   ```
+
+   For example:
+   
+   ```java
+   int[] numbers = new int[5];
+   ```
+
+**3. Can We Change the Size of an Array at Runtime?**
+
+   No, in Java, the size of an array is fixed upon creation and cannot be changed at runtime. If you need a dynamic data structure that can grow or shrink, consider using a `List` (e.g., `ArrayList`) instead.
+
+**4. Can You Declare an Array Without Assigning the Size of an Array?**
+
+   Yes, you can declare an array without specifying its size. For example:
+   
+   ```java
+   int[] numbers;
+   ```
+
+   However, you'll need to initialize it with a specific size before you can use it, like this:
+   
+   ```java
+   numbers = new int[5];
+   ```
+
+**5. What Is the Default Value of an Array?**
+
+   The default values of elements in an array depend on the data type:
+   
+   - Numeric data types (int, float, double, etc.) default to 0.
+   - `boolean` defaults to `false`.
+   - Reference data types (e.g., objects) default to `null`.
+   
+**6. What Is an ID Array with an Example?**
+
+   An "ID array" typically refers to an array that holds identifiers or unique values, often used in situations where each element corresponds to an entity or object with a unique ID. For example, an array of student IDs:
+   
+   ```java
+   int[] studentIDs = {101, 102, 103, 104, 105};
+   ```
+
+**7. Write a Program on a 2D Array?**
+
+   Sure, here's a simple Java program that demonstrates the creation and traversal of a 2D array:
+
+   ```java
+   public class TwoDArrayExample {
+       public static void main(String[] args) {
+           int[][] matrix = {
+               {1, 2, 3},
+               {4, 5, 6},
+               {7, 8, 9}
+           };
+
+           System.out.println("2D Array Elements:");
+
+           for (int i = 0; i < matrix.length; i++) {
+               for (int j = 0; j < matrix[i].length; j++) {
+                   System.out.print(matrix[i][j] + " ");
+               }
+               System.out.println(); // Move to the next row
+           }
+       }
+   }
+   ```
+
+   This program creates a 2D array `matrix` and prints its elements in a row-by-row format.
