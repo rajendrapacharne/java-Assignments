@@ -1,0 +1,65 @@
+**1. What is a Statically Typed and Dynamically Typed Programming Language?**
+
+   **Answer:** 
+   - **Statically Typed Language:** In a statically typed language like Java, variable types are determined at compile time. You need to declare the variable type explicitly, and once set, it cannot change during execution.
+   - **Dynamically Typed Language:** In a dynamically typed language like Python, variable types are determined at runtime. You don't need to declare the variable type explicitly, and the type can change during execution.
+
+**2. What is a Variable in Java?**
+
+   **Answer:** A variable in Java is a named storage location that holds data, such as numbers, text, or objects, during the execution of a program. It has a data type that specifies what kind of data it can store and a name to reference it.
+
+**3. How To Assign a Value To a Variable?**
+
+   **Answer:** You can assign a value to a variable in Java using the assignment operator `=`. Here's an example:
+
+   ```java
+   int age; // Declare an integer variable named "age"
+   age = 25; // Assign the value 25 to the "age" variable
+   ```
+
+**4. What are Primitive Data Types in Java?**
+
+   **Answer:** Primitive data types in Java are basic data types that represent single values. They are not objects and are used to store simple values. Common primitive data types include `int`, `double`, `char`, `boolean`, and others.
+
+**5. What are Identifiers in Java?**
+
+   **Answer:** Identifiers in Java are names used to identify variables, classes, methods, and other program elements. They follow specific rules:
+   - Must start with a letter, underscore (`_`), or dollar sign (`$`).
+   - Can include letters, digits, underscores, or dollar signs.
+   - Should not be a reserved keyword.
+   - Case-sensitive.
+
+**6. List the Operators in Java?**
+
+   **Answer:** Java has a variety of operators, including:
+   - Arithmetic operators (+, -, *, /, %)
+   - Relational operators (==, !=, >, <, >=, <=)
+   - Logical operators (&&, ||, !)
+   - Assignment operators (=, +=, -=, *=, /=, %=)
+   - Increment and decrement operators (++, --)
+   - Bitwise operators (&, |, ^, ~, <<, >>, >>>)
+   - Conditional (ternary) operator (?:)
+   - instanceof operator
+   - Type casting operators (e.g., (int), (double))
+
+**7. Explain Increment and Decrement Operators and give examples.**
+
+   **Answer:** Increment (`++`) and decrement (`--`) operators are used to increase or decrease the value of a variable by 1, respectively. They can be used as prefix (`++i`, `--i`) or postfix (`i++`, `i--`) operators.
+
+   Example of Prefix Increment:
+
+   ```java
+   int x = 5;
+   int result = ++x; // Increment x first, then assign to result
+   // x is now 6, result is 6
+   ```
+
+   Example of Postfix Increment:
+
+   ```java
+   int x = 5;
+   int result = x++; // Assign x to result, then increment x
+   // x is now 6, result is 5
+   ```
+
+   Decrement (`--`) works similarly but decreases the value by 1. These operators are commonly used in loops and other control structures.
