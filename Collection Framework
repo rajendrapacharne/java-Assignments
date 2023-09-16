@@ -1,0 +1,87 @@
+**1. What Is the Collection Framework in Java?**
+
+   The Java Collection Framework is a set of classes and interfaces in Java that provide a standard way to organize and manipulate groups of objects (collections). It includes interfaces such as `List`, `Set`, and `Map`, along with their implementing classes and related utility classes. The Collection Framework simplifies data manipulation tasks and offers a common set of methods and behaviors for different types of collections.
+
+**2. What Is the Difference Between ArrayList and LinkedList?**
+
+   - **ArrayList:**
+     - Implemented as a dynamic array.
+     - Provides fast random access to elements using indexes.
+     - Slower for insertions and deletions in the middle, as it requires shifting elements.
+     - Good for scenarios where you mostly read elements and rarely insert or delete.
+
+   - **LinkedList:**
+     - Implemented as a linked list of nodes.
+     - Provides fast insertions and deletions in the middle.
+     - Slower for random access, as it requires traversing the list.
+     - Good for scenarios where you frequently insert or delete elements.
+
+**3. What Is the Difference Between Iterator and ListIterator?**
+
+   - **Iterator:**
+     - It is a universal iterator that works with any collection.
+     - Supports only forward traversal (from the beginning to the end).
+     - Provides basic methods like `hasNext()` and `next()`.
+
+   - **ListIterator:**
+     - It is a specialized iterator for lists (e.g., `ArrayList`, `LinkedList`).
+     - Supports both forward and backward traversal.
+     - Provides additional methods like `hasPrevious()`, `previous()`, and `set()`.
+
+**4. What Is the Difference Between Iterator and Enumeration?**
+
+   - **Iterator:**
+     - Introduced in Java 1.2 as part of the Collection Framework.
+     - Supports both read and remove operations.
+     - More versatile and powerful than Enumeration.
+     - Available for all collections in the Collection Framework.
+
+   - **Enumeration:**
+     - Introduced in Java 1.0 for legacy collections (e.g., `Vector`, `Hashtable`).
+     - Supports only read operations.
+     - Less versatile and powerful than Iterator.
+     - Used mainly for legacy collections, and its use is discouraged in favor of Iterator.
+
+**5. What Is the Difference Between List and Set?**
+
+   - **List:**
+     - Allows duplicate elements.
+     - Maintains elements in a specific order (insertion order).
+     - Implementations include `ArrayList`, `LinkedList`, and `Vector`.
+
+   - **Set:**
+     - Does not allow duplicate elements.
+     - Does not maintain a specific order.
+     - Implementations include `HashSet`, `LinkedHashSet`, and `TreeSet`.
+
+**6. What Is the Difference Between HashSet and TreeSet?**
+
+   - **HashSet:**
+     - Implements the `Set` interface.
+     - Uses a hash table for storage.
+     - Elements are not stored in any specific order.
+     - Provides O(1) time complexity for add, remove, and contains operations (on average).
+     - Does not allow duplicate elements.
+
+   - **TreeSet:**
+     - Implements the `NavigableSet` interface, which extends `Set`.
+     - Uses a Red-Black Tree for storage.
+     - Elements are stored in sorted (natural) order.
+     - Provides O(log n) time complexity for add, remove, and contains operations.
+     - Does not allow duplicate elements.
+
+**7. What Is the Difference Between Array and ArrayList?**
+
+   - **Array:**
+     - A fixed-size data structure.
+     - Requires specifying the size at the time of creation.
+     - Supports both primitive and reference types.
+     - Not dynamically resizable (size cannot change once defined).
+     - Offers direct access to elements via indexes.
+   
+   - **ArrayList:**
+     - A dynamic and resizable data structure.
+     - Size can grow or shrink dynamically.
+     - Stores only reference types (objects), not primitive types (e.g., `int`).
+     - Provides methods for adding, removing, and accessing elements.
+     - Uses an underlying array that may be resized as needed.
