@@ -1,0 +1,45 @@
+**1. What Is an Interface in Java?**
+
+   In Java, an interface is a reference type that is similar to a class but is used to define a contract of methods that implementing classes must adhere to. An interface can contain abstract methods (methods without a body) that must be implemented by any class that claims to implement the interface. It provides a way to achieve abstraction and multiple inheritance in Java.
+
+**2. Which Modifiers Are Allowed for Methods in an Interface? Explain with an Example.**
+
+   In an interface, methods can have the following modifiers:
+   - `public`: All interface methods are implicitly `public` and are accessible from anywhere.
+   - `abstract`: All interface methods are implicitly `abstract` and have no method body.
+
+   Example of an interface with a method:
+   
+   ```java
+   public interface Shape {
+       public abstract double area(); // Method declaration (public and abstract by default)
+   }
+   ```
+
+**3. What Is the Use of an Interface in Java?**
+
+   Interfaces in Java serve several purposes:
+   - **Achieving Abstraction:** Interfaces define a contract of methods without providing an implementation. This allows for abstraction, as implementing classes can provide their own method implementations.
+   - **Multiple Inheritance:** Unlike classes, a class can implement multiple interfaces. This allows a class to inherit method contracts from multiple sources.
+   - **Polymorphism:** Interfaces enable polymorphism, as objects of classes that implement an interface can be treated as instances of that interface.
+   - **API Design:** Interfaces are used to define APIs (Application Programming Interfaces) that specify how different parts of a program should interact with each other.
+
+**4. What Is the Difference Between Abstract Class and Interface in Java?**
+
+   Here are some key differences between abstract classes and interfaces in Java:
+
+   - **Abstract Class:**
+     - Can have instance variables (fields) that can be inherited by subclasses.
+     - Can have constructors.
+     - Can have method implementations (concrete methods).
+     - Supports single inheritance (a class can extend only one abstract class).
+     - Typically used for providing a common base for related classes.
+
+   - **Interface:**
+     - Cannot have instance variables (only `public static final` constants).
+     - Cannot have constructors.
+     - Contains method declarations (abstract methods) only; no method implementations.
+     - Supports multiple inheritance (a class can implement multiple interfaces).
+     - Used for defining contracts that classes must adhere to, especially when unrelated classes need to implement common behavior.
+
+   In summary, abstract classes are used when you want to provide a common base with some shared functionality, while interfaces are used to define contracts and support multiple inheritance when needed.
