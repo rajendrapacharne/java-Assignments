@@ -1,0 +1,68 @@
+
+**1. Question: What is Git, and what is its primary purpose?**
+
+   Answer: Git is a distributed version control system (DVCS) designed to track changes in source code during software development. Its primary purpose is to help developers collaborate, manage code versions, and facilitate efficient team-based development.
+
+**2. Question: How do you initialize a new Git repository in a directory?**
+
+   Answer: To initialize a new Git repository, open a terminal or command prompt, navigate to the desired directory, and run the following command:
+
+   ```
+   git init
+   ```
+
+   This command initializes a new Git repository in the current directory.
+
+**3. Question: What is the purpose of the "git add" command in Git?**
+
+   Answer: The "git add" command is used to stage changes, which means it prepares the changes in your working directory to be included in the next commit. You can use it to specify which files or changes should be part of your next commit.
+
+**4. Question: How do you commit changes in Git with a meaningful message?**
+
+   Answer: To commit changes in Git, use the following command:
+
+   ```
+   git commit -m "Your commit message here"
+   ```
+
+   Replace "Your commit message here" with a brief and descriptive message explaining the changes made in the commit.
+
+**5. Question: What is the difference between "git clone" and "git pull"?**
+
+   Answer: 
+   - "git clone" is used to create a copy of a remote Git repository on your local machine. It fetches the entire repository, including all branches and commit history.
+   - "git pull" is used to update your local branch with the latest changes from the remote repository. It fetches new changes and merges them into your current branch.
+
+**6. Question: How can you configure your name and email in Git globally?**
+
+   Answer: You can configure your name and email globally in Git using the following commands:
+
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+
+   Replace "Your Name" and "your.email@example.com" with your actual name and email address.
+
+**7. Question: What is the role of a remote repository in Git?**
+
+   Answer: A remote repository in Git is a separate repository that exists on a different server, typically hosted online. It allows collaboration among team members by providing a centralized location for sharing and synchronizing code changes. Developers can push and pull changes to and from the remote repository to work together on a project.
+
+**8. Question: Why is version control important in software development?**
+
+   Answer: Version control is essential in software development because it enables developers to:
+
+   - Track changes to code over time.
+   - Collaborate effectively with team members.
+   - Maintain a history of code changes for debugging and auditing.
+   - Safeguard against data loss by keeping multiple versions of the code.
+
+**9. Question: Name some popular Git hosting services besides GitHub.**
+
+   Answer: Some popular Git hosting services include GitLab, Bitbucket, GitKraken, SourceForge, and AWS CodeCommit, in addition to GitHub.
+
+**10. Question: How does Git help in branching and managing different features or bug fixes in a project?**
+
+   Answer: Git allows developers to create branches, which are separate lines of development. This enables them to work on different features or bug fixes independently without affecting the main codebase. Branches can be merged back into the main branch when the work is complete.
+
+These questions and answers cover various aspects of Git and its usage in software development. They can be helpful for both learning and testing your knowledge of Git.
